@@ -70,6 +70,7 @@ class DEQueLinkedList:
         self._rear = p
         p = p._next
         self._rear._next = None
+        self._size -= 1
         return ele
     
     def first(self):

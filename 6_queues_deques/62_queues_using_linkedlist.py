@@ -36,6 +36,7 @@ class QueuesLinkedList:
             ele = self._front._element
             self._front = None
             self._rear = None
+            self._size -= 1
             return ele
         ele = self._front._element
         self._front = self._front._next
